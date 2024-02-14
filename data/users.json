@@ -26,5 +26,13 @@
   {
     "email": "aung@gmail.com",
     "password": "$2a$10$facFX8t4ic9dpBitIjIBmOg0nxvGiq.MmBydBf7QyoSFDbEaFFCsi"
+  },
+  {
+    "email": "sitnaing@gmail.com",
+    "password": "$2a$10$cPAzfniM1TEElewjaQQjueLElEcZChN39KuHGj6HkRz5VNTgCJgLS"
+  },
+  {
+    "email": "sitnaingsoe@gmail.com",
+    "password": "$2a$10$o8k5Ok6Kxr6bMA9kxI8OlOE3FGjjBhq86vmiDdIzgM9Qqbm6DENEu"
   }
 ]

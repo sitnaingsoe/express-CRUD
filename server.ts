@@ -55,18 +55,21 @@ server.post("/signin", (req: Request, res: Response) => {
 
   const token = jwt.sign({email}, "icqR8iVR6ukggB", {expiresIn: "1h"});
   res.cookie("token", token);
-  res.redirect("/index.html");
+  res.redirect("/home.html");
 });
 server.post("/logout", (req, res) => {
   res.clearCookie("token");
   res.redirect("/signin.html");
 });
 server.get("/data", checkAuth, (req, res) => {
-  console.log("User Data",__dirname)
+  console.log("User Data", __dirname);
   res.sendFile(__dirname + "/data/users.json");
 });
 
 server.get("/about", checkAuth, (req, res) => {
   res.send("This is your about page");
+});
+server.get("/home", checkAuth, (req, res) => {
+  res.redirect("home.html");
 });
 server.listen(PORT, () => console.log(`Server has started listening on ${PORT}`));
